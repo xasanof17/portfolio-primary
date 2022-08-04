@@ -26,6 +26,14 @@ import bootstrap from "../assets/skills/bootstrap.png";
 import contact from "../assets/contact.jpg";
 import mui from "../assets/skills/mui.png";
 import semanticui from "../assets/skills/semanticui.png";
+import affiliate from "../assets/projects/affiliate.png";
+import grill from "../assets/projects/grill.png";
+import onconnectLogin from "../assets/projects/onconnect-login.png";
+import onconnectDashboard from "../assets/projects/onconnect-dashboard.png";
+import onconnectDashboardInner from "../assets/projects/onconnect-dashboard-inner.png";
+import haus from "../assets/projects/haus.png";
+import discounts from "../assets/projects/discounts.png";
+import glx from "../assets/projects/glx.png";
 const images = {
   AboutImg,
   Html,
@@ -54,7 +62,15 @@ const images = {
   ionic,
   reactBootstrap,
   vueBootstrap,
-  contact
+  contact,
+  affiliate,
+  grill,
+  onconnectLogin,
+  onconnectDashboard,
+  onconnectDashboardInner,
+  haus,
+  discounts,
+  glx
 };
 
 export default images;
