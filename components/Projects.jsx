@@ -1,5 +1,3 @@
-import Image from 'next/image';
-import Link from 'next/link';
 import React from 'react';
 import { images } from '../constants';
 import ProjectItem from './ProjectItem';
@@ -7,10 +5,10 @@ import ProjectItem from './ProjectItem';
 const projectsItem = [
    { id: 1, title: 'Affiliate App', backgroundImg: images.affiliate, projectUrl: '/affilite', tech: 'Next JS' },
    { id: 2, title: 'Grill App', backgroundImg: images.grill, projectUrl: '/grill', tech: 'React JS' },
-   { id: 2, title: 'Onconnect App', backgroundImg: images.onconnectDashboard, projectUrl: '/onconnect', tech: 'React JS' },
-   { id: 2, title: 'Haus App', backgroundImg: images.haus, projectUrl: '/haus', tech: 'Vue JS' },
-   { id: 2, title: 'Discounts on Services App', backgroundImg: images.discounts, projectUrl: '/discounts', tech: 'React JS' },
-   { id: 2, title: 'Galaxy Travel App', backgroundImg: images.glx, projectUrl: '/glx', tech: 'React JS' },
+   { id: 3, title: 'Onconnect App', backgroundImg: images.onconnectDashboard, projectUrl: '/onconnect', tech: 'React JS' },
+   { id: 4, title: 'Haus App', backgroundImg: images.haus, projectUrl: '/haus', tech: 'Vue JS' },
+   { id: 5, title: 'Discounts on Services App', backgroundImg: images.discounts, projectUrl: '/discounts', tech: 'React JS' },
+   { id: 6, title: 'Galaxy Travel App', backgroundImg: images.glx, projectUrl: '/glx', tech: 'React JS' },
 ]
 
 const Projects = () => {
