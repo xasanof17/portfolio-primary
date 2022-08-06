@@ -50,18 +50,18 @@ const Navbar = () => {
       style={{ backgroundColor: `${navBg}` }}
       className={
         shadow
-          ? "fixed w-full h-20 shadow-xl z-[100] ease-in-out duration-300"
-          : "fixed w-full h-20 z-[100]"
+          ? "sticky top-0 left-0 w-full h-13 shadow-xl z-[100] ease-in-out duration-300"
+          : "sticky top-0 left-0 w-full h-13 z-[100]"
       }
     >
-      <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
+      <div className="flex justify-between items-center w-full h-full px-4 2xl:px-16">
         <Link href="/">
           <a>
             <Image
               src={images.NavLogo}
               alt="/"
-              width="150"
-              height="200"
+              width="60"
+              height="60"
               className="cursor-pointer logo"
             />
           </a>
