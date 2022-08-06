@@ -6,7 +6,7 @@ import { BsFillPersonLinesFill } from "react-icons/bs";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 import { images } from "../constants";
-import { db } from "../firebase/firebase";
+import InputMask from "react-input-mask";
 
 const Contact = () => {
     const [name, setName] = useState("");
@@ -120,18 +120,27 @@ const Contact = () => {
                                             name="name"
                                             // value={name}
                                             onChange={(e) => setName(e.target.value)}
+                                            required
+                                            autoComplete="off"
+                                            autoCapitalize="off"
+                                            autoCorrect="off"
                                         />
                                     </div>
                                     <div className="flex flex-col">
                                         <label className="uppercase text-sm py-2">
                                             Phone Number
                                         </label>
-                                        <input
+                                        <InputMask
+                                            mask={"+\\9\\9\\8\\ 99 999 99 99"}
                                             className="border-2 rounded-lg p-3 flex border-gray-300 focus:outline-none focus:ring focus:border-blue-500"
-                                            type="text"
+                                            type="tel"
                                             name="phone"
                                             // value={phone}
                                             onChange={(e) => setPhone(e.target.value)}
+                                            required
+                                            autoComplete="off"
+                                            autoCapitalize="off"
+                                            autoCorrect="off"
                                         />
                                     </div>
                                 </div>
@@ -143,6 +152,10 @@ const Contact = () => {
                                         name="email"
                                         // value={email}
                                         onChange={(e) => setEmail(e.target.value)}
+                                        required
+                                        autoComplete="off"
+                                        autoCapitalize="off"
+                                        autoCorrect="off"
                                     />
                                 </div>
                                 <div className="flex flex-col py-2">
@@ -153,6 +166,10 @@ const Contact = () => {
                                         name="subject"
                                         // value={subject}
                                         onChange={(e) => setSubject(e.target.value)}
+                                        required
+                                        autoComplete="off"
+                                        autoCapitalize="off"
+                                        autoCorrect="off"
                                     />
                                 </div>
                                 <div className="flex flex-col py-2">
@@ -163,6 +180,10 @@ const Contact = () => {
                                         name="message"
                                         // value={message}
                                         onChange={(e) => setMessage(e.target.value)}
+                                        autoComplete="off"
+                                        autoCapitalize="off"
+                                        autoCorrect="off"
+                                        required
                                     ></textarea>
                                 </div>
                                 <button type="submit" className="w-full p-4 text-white bg-blue-500 mt-4 focus:outline-none focus:ring focus:border-blue-500 z-10">
