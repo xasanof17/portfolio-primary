@@ -36,11 +36,11 @@ const Skills = () => {
               className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300"
               key={id}
             >
-              <div className="grid grid-cols-2 gap-2 justify-center items-center sm:flex sm:flex-col">
-                <div className="m-auto">
-                  <Image src={img} width="64px" height="64px" alt="/" />
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 justify-center items-center sm:flex sm:flex-col">
+                <div className="m-auto flex items-center justify-center w-[60px] h-[60px] sm:w-[50px] sm:h-[50px]">
+                  <Image src={img} className="w-full h-full" alt="/" />
                 </div>
-                <div className="flex flex-col items-center justify-center">
+                <div className="hidden sm:flex flex-col items-center justify-center">
                   <p>{name}</p>
                 </div>
               </div>

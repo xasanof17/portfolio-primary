@@ -14,7 +14,7 @@ const resume = () => {
         <link rel="icon" href="/fav.png" />
       </Head>
 
-      <div className="max-w-[940px] mx-auto p-2 pt-[120px]">
+      <div className="max-w-[940px] mx-auto p-2 pt-[50px] sm:pt-[120px]">
         <h2 className="text-center">Resume</h2>
         <div className="bg-[#d0d4d6] my-4 p-4 w-full flex justify-between items-center">
           <h2 className="text-center text-lg">Xasanov Javohir</h2>
@@ -61,7 +61,7 @@ const resume = () => {
         {/* Skills */}
         <div className="text-center py-4">
           <h5 className="text-center underline text-[18px] py-2">Skills</h5>
-          <p className="py-2 flex flex-wrap">
+          <div className="py-2 flex flex-wrap">
             <span className="font-bold">Technical Skills</span>
             <span className="px-2">|</span>Front-End Web Developer
             <span className="px-2">|</span>HTML
@@ -75,7 +75,8 @@ const resume = () => {
             <span className="px-2">|</span>Tailwind
             <span className="px-2">|</span>Bootstrap
             <span className="px-2">|</span>Sanity
-          </p>
+            <span className="px-2">|</span>Redux
+          </div>
           {/* <p className="py-2">
             <span className="font-bold">Amazon Web Services</span>
             <span className="px-2">|</span>Amazon Web Services Cloud
