@@ -9,6 +9,7 @@ const projectsItem = [
    { id: 4, title: 'Haus App', backgroundImg: images.haus, projectUrl: '/haus', tech: 'Vue JS' },
    { id: 5, title: 'Discounts on Services App', backgroundImg: images.discounts, projectUrl: '/discounts', tech: 'React JS' },
    { id: 6, title: 'Galaxy Travel App', backgroundImg: images.glx, projectUrl: '/glx', tech: 'React JS' },
+   { id: 7, title: 'OkeyPost App', backgroundImg: images.okeypost, projectUrl: '/okeypost', tech: 'Next JS' },
 ]
 
 const Projects = () => {
