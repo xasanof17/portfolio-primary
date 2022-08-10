@@ -1,6 +1,9 @@
 import React from "react";
 import Head from "next/head";
+import Image from "next/image";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { images } from "../constants";
+import Link from "next/link";
 
 const resume = () => {
   return (
@@ -59,7 +62,7 @@ const resume = () => {
         </p>
 
         {/* Skills */}
-        <div className="text-center py-4">
+        <div className="text-center my-5">
           <h5 className="text-center underline text-[18px] py-2">Skills</h5>
           <div className="py-2 flex flex-wrap">
             <span className="font-bold">Technical Skills</span>
@@ -77,13 +80,28 @@ const resume = () => {
             <span className="px-2">|</span>Sanity
             <span className="px-2">|</span>Redux
           </div>
-          {/* <p className="py-2">
-            <span className="font-bold">Amazon Web Services</span>
-            <span className="px-2">|</span>Amazon Web Services Cloud
-            Practitioner
-          </p> */}
         </div>
-
+        {/* Resume PDF */}
+        <a href={'https://me-qr.com/z1SeeOH'} target="_blank"
+          rel="noreferrer">
+          <div className="flex items-center justify-center flex-col py-5">
+          <h5 className="text-center underline text-[18px] py-2">Resume PDF</h5>
+            <div className="flex items-center justify-center max-w-[200px]">
+              <Image src={images.qrcode} alt='resume pdf' className="w-full h-full" />
+            </div>
+          </div>
+        </a>
+        {/* Certificate PROWEB */}
+        <a href={'https://cdn.me-qr.com/jpg/8268650.jpg'} target="_blank"
+          rel="noreferrer">
+          <div className="flex flex-col items-center py-5">
+            <h5 className="text-center underline text-[18px] py-2">Certificate</h5>
+            <div className="flex items-center justify-center max-w-[200px]">
+              <Image src={images.certificate} alt='certificate' />
+            </div>
+          </div>
+        </a>
+        {/* Experience */}
         <h5 className="text-center underline text-[18px] py-4">
           Professional Experience
         </h5>

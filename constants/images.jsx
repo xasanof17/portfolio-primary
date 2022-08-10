@@ -34,6 +34,10 @@ import onconnectDashboardInner from "../assets/projects/onconnect-dashboard-inne
 import haus from "../assets/projects/haus.png";
 import discounts from "../assets/projects/discounts.png";
 import glx from "../assets/projects/glx.png";
+import qrcode from "../assets/resume.png";
+import certificate from "../assets/certificate.jpg";
+
+
 const images = {
   AboutImg,
   Html,
@@ -70,7 +74,9 @@ const images = {
   onconnectDashboardInner,
   haus,
   discounts,
-  glx
+  glx,
+  qrcode,
+  certificate
 };
 
 export default images;

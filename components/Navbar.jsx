@@ -35,7 +35,7 @@ const Navbar = () => {
           : "sticky top-0 left-0 w-full h-13 z-[100]"
       }
     >
-      <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
+      <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16 max-w-[1400px] mx-auto">
         <Link href="/">
           <a>
             <Image
